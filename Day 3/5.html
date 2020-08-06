@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Page</title>
+</head>
+<style>
+    html,
+    body {
+        margin: 0;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background: url("https://picsum.photos/1400/1200");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-weight: bold;
+    }
+
+    .header,
+    .footer {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        font-size: 24px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .body {
+        flex: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .time {
+        margin-bottom: 10px;
+        font-size: 96px;
+    }
+
+    .msg {
+        font-size: 64px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div> <a href="4.html">Search</a></div>
+            <div>Home</div>
+        </div>
+        <div class="body">
+            <div class="data">
+                <div class="time">20 : 20</div>
+                <div class="msg">Hello There !!!...How You Doing???</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>Login</div>
+            <div>Register</div>
+        </div>
+    </div>
+</body>
+
+</html>

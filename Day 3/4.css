@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+}
+
+.fullbody {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: linear-gradient(whitesmoke,royalblue,whitesmoke);
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    flex: 1;
+    color: white;
+    font-size: 24px; 
+    margin-left: 10px; 
+    font-weight: bold; 
+    font-family: cursive;
+}
+
+.navbar {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menulist {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white; 
+    border: 1.5px solid white; 
+    font-size: 15px; 
+    font-weight: bold; 
+    padding: 3px;
+    border-radius: 12px; 
+    width:30%;
+    text-align: center;
+    font-family:cursive;
+}
+
+.main {
+    flex: 10;
+    display: flex;
+    background: linear-gradient(powderblue,royalblue,powderblue);
+}
+
+.l,.r {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.c {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.mhead {
+    background: linear-gradient(whitesmoke,black,whitesmoke);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    border: 1.5px solid black;
+    border-radius: 12px;
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.mheadm {
+    background: linear-gradient(whitesmoke,black,whitesmoke);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    border: 1.5px solid black;
+    border-radius: 12px;
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.pg {
+    background: linear-gradient(yellow,orange,yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    border: 1.5px solid;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-left: 25vh;
+    margin-right: 25vh;
+    color: black;
+    font-family: cursive; 
+    font-weight: bold;
+}
+
+.gallery {
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 500px;               
+    height: 300px; 
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.footer {
+    background: royalblue;
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    background: linear-gradient(whitesmoke,royalblue,whitesmoke);
+}
+
+.fl,.fr {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.fc {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 5px;
+    font-size: small;
+    font-family: cursive;
+}
