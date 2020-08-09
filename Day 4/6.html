@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <script src="js/6.js"></script>
+</head>
+
+<style>
+    * {
+        margin: 0;
+    }
+
+    .main {
+        background: linear-gradient(red, blue, green);
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid greenyellow;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .num {
+        font-size: 200px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: whitesmoke;
+    }
+
+    .btn {
+        font-size: 50px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: black;
+        background: linear-gradient(to right, yellow, orange);
+        padding: 10px;
+        margin-right: 10px;
+        border: 2px solid rgb(248, 8, 8);
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="block">
+            <div class="num">0</div>
+            <div>
+                <button class="btn" id="plus" onclick="increase()">Increase</button>
+                <button class="btn" id="minus" onclick="decrease()">Decrease</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
