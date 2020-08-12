@@ -1,0 +1,28 @@
+*Problem statement :*
+ 
+Create *LOGIN PAGE* using *flex* with  following details :
+
+ *1.Username* Textbox
+ *2.Password*  Textbox
+ *3.Login* Button
+ *4.Remember Me* Checkbox
+ *5.Keep Me Signed In* Checkbox
+
+ *_Apply client-side validation on each field_ .* 
+
+ *Username field contains* *:* 
+
+numeric, alphanumeric, alphabets texts, no special characters except *@*.
+Length: min 3 characters max 12 characters
+
+ *Password field contains* 
+
+Alphanumeric,  special characters except *@*.
+Length: min 5 characters max 12 characters
+
+If Username and Password is invalid don't allow to redirect to home page 
+
+Show invalid Username and Password message 
+
+After successful submission redirects the user to the home page.
+ Display user name and password on the home page.

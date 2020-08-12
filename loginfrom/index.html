@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="1.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <form onclick="validation()">
+            <div class="loginform">
+                <h2>Login Form</h2>
+                <div class="ip">
+                    <div class="lable" style="flex: 1;">User Name :</div>
+                    <input id="unm" class="ip-1" style="flex: 3;" type="text" placeholder="Username" required>
+                    <span id="usererror" style="color:red"></span>
+                    <span id="usererror1" style="color:green"></span>
+                </div>
+                <div class="ip">
+                    <div style="flex: 1;" class="lable">Password :</div>
+                    <input id="pwd" class="ip-1" style="flex: 3;" type="password" placeholder="Password" required>
+                    <span id="pwderror" style="color:red"></span>
+                    <span id="pwderror1" style="color:green"></span>
+                </div>
+                <div class="ck">
+                    <input type="checkbox"> Remember Me
+                </div>
+                <div class="ck">
+                    <input type="checkbox"> Keep me sign in
+                </div>
+                <button type="submit" name="login" value="Sign in">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+}
+
+.main {
+    height: 100vh;
+    background: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginform {
+    height: 50vh;
+    width: 25vw;
+    background: greenyellow;
+    display: flex; 
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color:black;
+    padding: 8px;
+    align-self: center;
+    margin-bottom: 16px;
+}
+
+.ip {
+    display: flex;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 12px;
+}
+
+.ip-1 {
+    background: transparent;
+    background: white;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+button {
+    width: 5vw;
+    height: 5vh;
+    padding: 5px;
+    align-self: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    margin-top: 20px;
+    border: 1.5px solid black;
+    border-radius: 30px;
+    background: chocolate;
+}
+
+.ck {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
