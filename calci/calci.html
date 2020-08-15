@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calci.css">
+    <script src="calci.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="body">
+            <div class="clm"><input id="output" type="text" name="display" readonly></div>
+            <div class="clm">
+                <div class="br"><input class="button" type="button" id="one" onclick="add(1)" value="1"></div>
+                <div class="br"><input class="button" type="button" id="two" onclick="add(2)" value="2"></div>
+                <div class="br"><input class="button" type="button" id="three" onclick="add(3)" value="3"></div>
+                <div class="br"><input class="button" type="button" id="plus" onclick="add('+')" value="+"></div>
+            </div>
+            <div class="clm">
+                <div class="br"><input class="button" type="button" id="four" onclick="add(4)" value="4"></div>
+                <div class="br"><input class="button" type="button" id="five" onclick="add(5)" value="5"></div>
+                <div class="br"><input class="button" type="button" id="six" onclick="add(6)" value="6"></div>
+                <div class="br"><input class="button" type="button" id="minus" onclick="add('-')" value="-"></div>
+            </div>
+            <div class="clm">
+                <div class="br"><input class="button" type="button" id="seven" onclick="add(7)" value="7"></div>
+                <div class="br"><input class="button" type="button" id="eight" onclick="add(8)" value="8"></div>
+                <div class="br"><input class="button" type="button" id="nine" onclick="add(9)" value="9"></div>
+                <div class="br"><input class="button" type="button" id="multiply" onclick="add('*')" value="x"></div>
+            </div>
+            <div class="clm">
+                <div class="br"><input class="button" type="button" id="clear" onclick="clean()" value="C"></div>
+                <div class="br"><input class="button" type="button" id="zero" onclick="add(0)" value="0"></div>
+                <div class="br"><input class="button" type="button" id="equal" onclick="equal()" value="="></div>
+                <div class="br"><input class="button" type="button" id="devide" onclick="add('/')" value="/"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Template</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="3.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-between bg-dark sticky-top" style="height: 60px;">
+            <div class=" col-4 text-light  d-flex justify-content-start" style="font-size: 21px;">Dac-Wall</div>
+            <div class="col-3 text-light d-flex justify-content-end">Log Out</div>
+        </div>
+        <div class="row mt-1 justify-content-between">
+            <div class="col-3">
+                <div class="row mb-1 ml-1 mr-1 bg-dark rounded text-light justify-content-center align-items-center"
+                    style="height: 50px;">
+                    Left Contect</div>
+                <div class="row mb-1 ml-1 mr-1  rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 ml-1 mr-1  rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1  rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1  rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1  rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1  rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1  rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1  rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1  rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1  rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1  rounded" style="height: 50px; border: 0.5px solid black;"></div>
+            </div>
+            <div class="col-6">
+
+                <div class="row mb-1 bg-dark rounded text-light justify-content-center align-items-center"
+                    style="height: 50px;">Center Content</div>
+
+                <div class="row mb-1 justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <!--image row-->
+                        <div class="row border">
+                            <div class="col-12 p-0 d-flex justify-content-center align-items-center"
+                                style="height: 400px;">
+                                <img src="https://picsum.photos/600/600" alt="" class="rounded"
+                                    style="height: 100%; width: 100%; object-fit: cover; border: 1px solid black;">
+                            </div>
+                        </div>
+
+                        <!-- Button Row -->
+                        <div class="row mt-1">
+                            <div class=" col-3 p-0">
+                                <button onclick="likeMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Like <span>0</span>
+                                </button>
+                            </div>
+                            <div class="col-6 p-0">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                    placeholder="Add your comment" />
+                            </div>
+                            <div class="col-3 p-0">
+                                <button onclick="commentMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Comment
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comment Under one Box So that comment operations become relatively easy-->
+                        <div class="d-flex flex-column" id="commentContainer">
+                            <div class="row mt-1" style="visibility: hidden;">
+                                <div class="col-10 p-0" style="word-wrap: break-word;">
+                                    Sample comment here
+                                </div>
+                                <div class="col-2 p-0">
+                                    <button class="btn btn-sm btn-block btn-outline-danger" onclick="deleteMe(this)">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mb-1 justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <!--image row-->
+                        <div class="row border">
+                            <div class="col-12 p-0 d-flex justify-content-center align-items-center"
+                                style="height: 400px;">
+                                <img src="https://picsum.photos/601/600" alt="" class="rounded"
+                                    style="height: 100%; width: 100%; object-fit: cover; border: 1px solid black;">
+                            </div>
+                        </div>
+
+                        <!-- Button Row -->
+                        <div class="row mt-1">
+                            <div class=" col-3 p-0">
+                                <button onclick="likeMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Like <span>0</span>
+                                </button>
+                            </div>
+                            <div class="col-6 p-0">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                    placeholder="Add your comment" />
+                            </div>
+                            <div class="col-3 p-0">
+                                <button onclick="commentMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Comment
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comment Under one Box So that comment operations become relatively easy-->
+                        <div class="d-flex flex-column" id="commentContainer">
+                            <div class="row mt-1" style="visibility: hidden;">
+                                <div class="col-10 p-0" style="word-wrap: break-word;">
+                                    Sample comment here
+                                </div>
+                                <div class="col-2 p-0">
+                                    <button class="btn btn-sm btn-block btn-outline-danger" onclick="deleteMe(this)">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mb-1 justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <!--image row-->
+                        <div class="row border">
+                            <div class="col-12 p-0 d-flex justify-content-center align-items-center"
+                                style="height: 400px;">
+                                <img src="https://picsum.photos/602/600" alt="" class="rounded"
+                                    style="height: 100%; width: 100%; object-fit: cover; border: 1px solid black;">
+                            </div>
+                        </div>
+
+                        <!-- Button Row -->
+                        <div class="row mt-1">
+                            <div class=" col-3 p-0">
+                                <button onclick="likeMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Like <span>0</span>
+                                </button>
+                            </div>
+                            <div class="col-6 p-0">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                    placeholder="Add your comment" />
+                            </div>
+                            <div class="col-3 p-0">
+                                <button onclick="commentMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Comment
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comment Under one Box So that comment operations become relatively easy-->
+                        <div class="d-flex flex-column" id="commentContainer">
+                            <div class="row mt-1" style="visibility: hidden;">
+                                <div class="col-10 p-0" style="word-wrap: break-word;">
+                                    Sample comment here
+                                </div>
+                                <div class="col-2 p-0">
+                                    <button class="btn btn-sm btn-block btn-outline-danger" onclick="deleteMe(this)">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mb-1 justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <!--image row-->
+                        <div class="row border">
+                            <div class="col-12 p-0 d-flex justify-content-center align-items-center"
+                                style="height: 400px;">
+                                <img src="https://picsum.photos/603/600" alt="" class="rounded"
+                                    style="height: 100%; width: 100%; object-fit: cover; border: 1px solid black;">
+                            </div>
+                        </div>
+
+                        <!-- Button Row -->
+                        <div class="row mt-1">
+                            <div class=" col-3 p-0">
+                                <button onclick="likeMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Like <span>0</span>
+                                </button>
+                            </div>
+                            <div class="col-6 p-0">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                    placeholder="Add your comment" />
+                            </div>
+                            <div class="col-3 p-0">
+                                <button onclick="commentMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Comment
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comment Under one Box So that comment operations become relatively easy-->
+                        <div class="d-flex flex-column" id="commentContainer">
+                            <div class="row mt-1" style="visibility: hidden;">
+                                <div class="col-10 p-0" style="word-wrap: break-word;">
+                                    Sample comment here
+                                </div>
+                                <div class="col-2 p-0">
+                                    <button class="btn btn-sm btn-block btn-outline-danger" onclick="deleteMe(this)">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mb-1 justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <!--image row-->
+                        <div class="row border">
+                            <div class="col-12 p-0 d-flex justify-content-center align-items-center"
+                                style="height: 400px;">
+                                <img src="https://picsum.photos/604/600" alt="" class="rounded"
+                                    style="height: 100%; width: 100%; object-fit: cover; border: 1px solid black;">
+                            </div>
+                        </div>
+
+                        <!-- Button Row -->
+                        <div class="row mt-1">
+                            <div class=" col-3 p-0">
+                                <button onclick="likeMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Like <span>0</span>
+                                </button>
+                            </div>
+                            <div class="col-6 p-0">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                    placeholder="Add your comment" />
+                            </div>
+                            <div class="col-3 p-0">
+                                <button onclick="commentMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Comment
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comment Under one Box So that comment operations become relatively easy-->
+                        <div class="d-flex flex-column" id="commentContainer">
+                            <div class="row mt-1" style="visibility: hidden;">
+                                <div class="col-10 p-0" style="word-wrap: break-word;">
+                                    Sample comment here
+                                </div>
+                                <div class="col-2 p-0">
+                                    <button class="btn btn-sm btn-block btn-outline-danger" onclick="deleteMe(this)">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mb-1 justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <!--image row-->
+                        <div class="row border">
+                            <div class="col-12 p-0 d-flex justify-content-center align-items-center"
+                                style="height: 400px;">
+                                <img src="https://picsum.photos/605/600" alt="" class="rounded"
+                                    style="height: 100%; width: 100%; object-fit: cover; border: 1px solid black;">
+                            </div>
+                        </div>
+
+                        <!-- Button Row -->
+                        <div class="row mt-1">
+                            <div class=" col-3 p-0">
+                                <button onclick="likeMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Like <span>0</span>
+                                </button>
+                            </div>
+                            <div class="col-6 p-0">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                    placeholder="Add your comment" />
+                            </div>
+                            <div class="col-3 p-0">
+                                <button onclick="commentMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Comment
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comment Under one Box So that comment operations become relatively easy-->
+                        <div class="d-flex flex-column" id="commentContainer">
+                            <div class="row mt-1" style="visibility: hidden;">
+                                <div class="col-10 p-0" style="word-wrap: break-word;">
+                                    Sample comment here
+                                </div>
+                                <div class="col-2 p-0">
+                                    <button class="btn btn-sm btn-block btn-outline-danger" onclick="deleteMe(this)">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mb-1 justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <!--image row-->
+                        <div class="row border">
+                            <div class="col-12 p-0 d-flex justify-content-center align-items-center"
+                                style="height: 400px;">
+                                <img src="https://picsum.photos/606/600" alt="" class="rounded"
+                                    style="height: 100%; width: 100%; object-fit: cover; border: 1px solid black;">
+                            </div>
+                        </div>
+
+                        <!-- Button Row -->
+                        <div class="row mt-1">
+                            <div class=" col-3 p-0">
+                                <button onclick="likeMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Like <span>0</span>
+                                </button>
+                            </div>
+                            <div class="col-6 p-0">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                    placeholder="Add your comment" />
+                            </div>
+                            <div class="col-3 p-0">
+                                <button onclick="commentMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Comment
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comment Under one Box So that comment operations become relatively easy-->
+                        <div class="d-flex flex-column" id="commentContainer">
+                            <div class="row mt-1" style="visibility: hidden;">
+                                <div class="col-10 p-0" style="word-wrap: break-word;">
+                                    Sample comment here
+                                </div>
+                                <div class="col-2 p-0">
+                                    <button class="btn btn-sm btn-block btn-outline-danger" onclick="deleteMe(this)">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mb-1 justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <!--image row-->
+                        <div class="row border">
+                            <div class="col-12 p-0 d-flex justify-content-center align-items-center"
+                                style="height: 400px;">
+                                <img src="https://picsum.photos/607/600" alt="" class="rounded"
+                                    style="height: 100%; width: 100%; object-fit: cover; border: 1px solid black;">
+                            </div>
+                        </div>
+
+                        <!-- Button Row -->
+                        <div class="row mt-1">
+                            <div class=" col-3 p-0">
+                                <button onclick="likeMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Like <span>0</span>
+                                </button>
+                            </div>
+                            <div class="col-6 p-0">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                    placeholder="Add your comment" />
+                            </div>
+                            <div class="col-3 p-0">
+                                <button onclick="commentMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Comment
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comment Under one Box So that comment operations become relatively easy-->
+                        <div class="d-flex flex-column" id="commentContainer">
+                            <div class="row mt-1" style="visibility: hidden;">
+                                <div class="col-10 p-0" style="word-wrap: break-word;">
+                                    Sample comment here
+                                </div>
+                                <div class="col-2 p-0">
+                                    <button class="btn btn-sm btn-block btn-outline-danger" onclick="deleteMe(this)">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mb-1 justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <!--image row-->
+                        <div class="row border">
+                            <div class="col-12 p-0 d-flex justify-content-center align-items-center"
+                                style="height: 400px;">
+                                <img src="https://picsum.photos/608/600" alt="" class="rounded"
+                                    style="height: 100%; width: 100%; object-fit: cover; border: 1px solid black;">
+                            </div>
+                        </div>
+
+                        <!-- Button Row -->
+                        <div class="row mt-1">
+                            <div class=" col-3 p-0">
+                                <button onclick="likeMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Like <span>0</span>
+                                </button>
+                            </div>
+                            <div class="col-6 p-0">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                    placeholder="Add your comment" />
+                            </div>
+                            <div class="col-3 p-0">
+                                <button onclick="commentMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Comment
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comment Under one Box So that comment operations become relatively easy-->
+                        <div class="d-flex flex-column" id="commentContainer">
+                            <div class="row mt-1" style="visibility: hidden;">
+                                <div class="col-10 p-0" style="word-wrap: break-word;">
+                                    Sample comment here
+                                </div>
+                                <div class="col-2 p-0">
+                                    <button class="btn btn-sm btn-block btn-outline-danger" onclick="deleteMe(this)">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mb-1 justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <!--image row-->
+                        <div class="row border">
+                            <div class="col-12 p-0 d-flex justify-content-center align-items-center"
+                                style="height: 400px;">
+                                <img src="https://picsum.photos/609/600" alt="" class="rounded"
+                                    style="height: 100%; width: 100%; object-fit: cover; border: 1px solid black;">
+                            </div>
+                        </div>
+
+                        <!-- Button Row -->
+                        <div class="row mt-1">
+                            <div class=" col-3 p-0">
+                                <button onclick="likeMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Like <span>0</span>
+                                </button>
+                            </div>
+                            <div class="col-6 p-0">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                    placeholder="Add your comment" />
+                            </div>
+                            <div class="col-3 p-0">
+                                <button onclick="commentMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Comment
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comment Under one Box So that comment operations become relatively easy-->
+                        <div class="d-flex flex-column" id="commentContainer">
+                            <div class="row mt-1" style="visibility: hidden;">
+                                <div class="col-10 p-0" style="word-wrap: break-word;">
+                                    Sample comment here
+                                </div>
+                                <div class="col-2 p-0">
+                                    <button class="btn btn-sm btn-block btn-outline-danger" onclick="deleteMe(this)">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mb-1 justify-content-center">
+                    <div class="col-12 d-flex flex-column">
+                        <!--image row-->
+                        <div class="row border">
+                            <div class="col-12 p-0 d-flex justify-content-center align-items-center"
+                                style="height: 400px;">
+                                <img src="https://picsum.photos/610/600" alt="" class="rounded"
+                                    style="height: 100%; width: 100%; object-fit: cover; border: 1px solid black;">
+                            </div>
+                        </div>
+
+                        <!-- Button Row -->
+                        <div class="row mt-1">
+                            <div class=" col-3 p-0">
+                                <button onclick="likeMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Like <span>0</span>
+                                </button>
+                            </div>
+                            <div class="col-6 p-0">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                    placeholder="Add your comment" />
+                            </div>
+                            <div class="col-3 p-0">
+                                <button onclick="commentMe(this)" class="btn btn-sm btn-outline-primary btn-block">
+                                    Comment
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Comment Under one Box So that comment operations become relatively easy-->
+                        <div class="d-flex flex-column" id="commentContainer">
+                            <div class="row mt-1" style="visibility: hidden;">
+                                <div class="col-10 p-0" style="word-wrap: break-word;">
+                                    Sample comment here
+                                </div>
+                                <div class="col-2 p-0">
+                                    <button class="btn btn-sm btn-block btn-outline-danger" onclick="deleteMe(this)">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class=" col-3">
+                <div class="row mb-1 mr-1 ml-1 bg-dark rounded text-light justify-content-center align-items-center"
+                    style="height: 50px;">Right Contect</div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+                <div class="row mb-1 mr-1 ml-1 rounded" style="height: 50px; border: 0.5px solid black;"></div>
+            </div>
+        </div>
+
+        <div class="row align-items-center text-light justify-content-center bg-secondary " style="height: 60px;">
+            <div>copyright @ by Shankar Lad</div>
+        </div>
+    </div>
+</body>
+
+</html>
