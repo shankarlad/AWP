@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="1.js"></script>
+
+    <title>Open Weather</title>
+
+    <style>
+        .body {
+            background: url(https://picsum.photos/1200/1200);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="container-fluid">
+        <!--Header-->
+        <div class="row align-items-center justify-content-between bg-dark sticky-top" style="height: 60px;">
+            <div class=" col-4 text-light  d-flex justify-content-start" style="font-size: 21px;">Dac-Wall</div>
+            <div class=" col-4 text-light  d-flex justify-content-center" style="font-size: 21px;">Weather Forcast</div>
+            <div class="col-4 text-light d-flex justify-content-end">Log Out</div>
+        </div>
+
+        <div>
+
+            <div class="row justify-content-center align-items-center" style="height: 20vh;">
+
+                <div class="col-12 p-0 d-flex col-md-6 justify-content-center align-items-center">
+                    <input class="col-9 form-control" type="text" placeholder="Enter City" id="cityValue">
+                    <button class="col-3 btn btn-warning ml-1 btn-block" onclick="forCast()">Search</button>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center" style="height: 63vh;">
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center"
+                    id="displayValue" style="visibility: hidden;">
+                    <div class="row mb-1"
+                        style="color: white; font-size: 36px; font-weight: bold; font-family: 'Courier New', Courier, monospace;">
+                        1</div>
+                    <div class="row mb-1"
+                        style="color: white; font-size: small; font-family: 'Courier New', Courier, monospace;">
+                        1</div>
+                    <div class="row mb-1"
+                        style="color: white; font-size: 21px; font-weight: bold; font-family: 'Courier New', Courier, monospace;">
+                        2</div>
+                    <div class="row mb-1"
+                        style="color: white; font-size: 21px; font-weight: bold; font-family: 'Courier New', Courier, monospace;">
+                        3</div>
+                    <div class="row mb-1"
+                        style="color: white; font-size: 21px; font-weight: bold; font-family: 'Courier New', Courier, monospace;">
+                        4</div>
+                    <div class="row mb-1"
+                        style="color: white; font-size: 21px; font-weight: bold; font-family: 'Courier New', Courier, monospace;">
+                        5</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <div class="row align-items-center text-light justify-content-center bg-secondary " style="height: 60px;">
+            <div>copyright @ by Shankar Lad</div>
+        </div>
+    </div>
+</body>
+
+</html>
